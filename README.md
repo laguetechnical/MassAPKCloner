@@ -15,12 +15,44 @@
 - Creates 50+ clones in minutes
 - All clones installable at the same time
 
-### Requirements (MUST USE THESE)
+### REQUIREMENTS (MUST BE INSTALLED)
 | Tool                  | Version      | Download Link |
 |-----------------------|--------------|---------------|
-| **Apktool**           | **2.9.3**    | https://github.com/iBotPeaches/Apktool/releases/tag/v2.9.3 |
-| zipalign.exe          | Any          | Already included |
-| apksigner.jar         | Any          | Already included |
+| **Python**           | **3.11+**    | https://python.org/ |
 | Java                  | 8 or higher  | https://adoptium.net |
 
-### Folder Structure
+
+### How to Use (2 Minutes Setup)
+1. Download this repo
+2. Put your game's APK in the folder
+3. Double-click `cloner.py` (or run `python cloner.py`)
+4. Press **Enter** → type how many clones (50 recommended)
+5. Wait → Done! Check `CLONES/` folder
+
+### Tested & Working Games (2025)
+- Free Fire / Free Fire MAX
+- PUBG Mobile
+- Call of Duty Mobile
+- Mobile Legends
+- Roblox
+- Avakin Life v2.013+
+- Stumble Guys
+- And 100+ more...
+
+### Disclaimer
+For educational & personal use only.  
+Do not abuse. Use responsibly.
+
+### Star this repo if it helped you
+Made with love & dua by **Ahmed Bhai**  
+**Alhamdulillah for everything**
+
+---
+**2025 ka sabse powerful cloner — ab kisi ko mat batana**
+
+### Plugins Used (SHOULD UPDATE THESE)
+| Tool                  | Version      | Download Link |
+|-----------------------|--------------|---------------|
+| **Apktool**           | **2.12.1**    | https://github.com/iBotPeaches/Apktool/releases/tag/v2.9.3 |
+| zipalign.exe          | Any          | Already included |
+| apksigner.jar         | Any          | Already included |
