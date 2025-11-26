@@ -140,49 +140,7 @@ for i in range(1, MAX_CLONES + 1):
                 f.write(manifest)
             log(f"   Package FORCED changed → {new_pkg}")
 
-        # FAST SMART SMALI PATCH (2025 METHOD — 10x FASTER)
-        smali_dirs = [d for d in os.listdir(temp_dir) if d.startswith("smali")]
-        patched = False
-        for smali_dir in smali_dirs:
-            dir_path = os.path.join(temp_dir, smali_dir)
-            if not os.path.isdir(dir_path):
-                continue
-            for root, dirs, files in os.walk(dir_path):
-                for file in files:
-                    if file.endswith(".smali"):
-                        filepath = os.path.join(root, file)
-                        try:
-                            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-                                content = f.read()
-                            if BASE_PACKAGE in content:
-                                content = content.replace(BASE_PACKAGE, new_pkg)
-                                with open(filepath, "w", encoding="utf-8") as f:
-                                    f.write(content)
-                                patched = True
-                        except:
-                            pass
-                # Early exit if already patched many files (no need to scan all)
-                if patched:
-                    break
-            if patched:
-                break
-        if patched:
-            log("   Package name patched in smali (anti-detection bypass)")
-        # # Patch smali files too (for Unity/Free Fire/PUBG that check package in code)
-        # import glob
-        # for smali_file in glob.glob(f"{temp_dir}/smali*/**/*.smali", recursive=True):
-        #     try:
-        #         with open(smali_file, "r", encoding="utf-8", errors="ignore") as f:
-        #             content = f.read()
-        #         if BASE_PACKAGE in content:
-        #             content = content.replace(BASE_PACKAGE, new_pkg)
-        #             with open(smali_file, "w", encoding="utf-8") as f:
-        #                 f.write(content)
-        #     except:
-        #         pass
-        # log("   Package patched in all smali files (anti-detection bypass)")
 
-        # AUTO CHANGE APP NAME — WORKS FOR EVERY GAME (NO HARDCODE)
         strings_path = f"{temp_dir}/res/values/strings.xml"
         if os.path.exists(strings_path):
             with open(strings_path, "r", encoding="utf-8") as f:
