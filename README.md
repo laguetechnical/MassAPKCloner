@@ -18,12 +18,13 @@
 ### REQUIREMENTS (MUST BE INSTALLED)
 | Tool                  | Version      | Download Link |
 |-----------------------|--------------|---------------|
-| **Python**           | **3.11+**    | https://python.org/ |
+| **Python** optional  | **3.11+**    | https://python.org/ |
 | Java                  | 8 or higher  | https://adoptium.net |
+| aapt.exe               | with java    | add bin folder path  |
 
 
 ### How to Use (2 Minutes Setup)
-1. Download this repo
+1. Download this repo, add this java folder into environment variable's "path" C:\Program Files\Common Files\Oracle\Java\javapath
 2. Put your game's APK in the folder
 3. Double-click `cloner.py` (or run `python cloner.py`)
 4. Press **Enter** → type how many clones (50 recommended)
