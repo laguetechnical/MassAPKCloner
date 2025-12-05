@@ -20,7 +20,7 @@
 |-----------------------|--------------|---------------|
 | **Python** optional  | **3.11+**    | https://python.org/ |
 | Java                  | 8 or higher  | https://adoptium.net |
-| aapt2.exe               |  v2   | comes with sdk build tools  |
+| sdk build tools               |  34.0.0   | [use sdkmanager](https://dl.google.com/android/repository/commandlinetools-win-13114758_latest.zip) |
 
 
 ### How to Use (2 Minutes Setup)
